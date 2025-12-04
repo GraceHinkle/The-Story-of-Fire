@@ -53,6 +53,9 @@ header {
 .nav-item {
   text-align: center;
 }
+#current {
+  color: rgb(244, 196, 38);
+}
 .nav-link {
   display: flex; /* Flexbox for horizontal alignment */
   align-items: center; /* Center icons and text vertically */
