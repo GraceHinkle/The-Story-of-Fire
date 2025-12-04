@@ -20,8 +20,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" /><!--Awesomefont-->
 
   <link rel='stylesheet' href='style.css'>
-  <link rel='stylesheet' href='artStyle.css'>
-  <link rel='stylesheet' href='D3_example.css'>
+  <link rel='stylesheet' href='IndexStyle.css'>
   <link rel='stylesheet' href='header.css'>
   <!-- js button functionality below -->
   <script src="Portfolio.js" defer></script>
@@ -30,7 +29,7 @@
 <body>
   <header class="header">
     <div class="container text-center">
-      <h1>Topic: ...</h1>
+      <h1>Topic: 1</h1>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
@@ -44,15 +43,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html"><span class="linkBlocks">Home</span><i
-                  class="fa-solid fa-house"></i></a>
+              <a class="nav-link" href="index.html"><span class="linkBlocks">Home</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="page2.html"><span class="linkBlocks">Topic1</span><i
-                  class="fa-solid fa-paintbrush"></i></a>
+              <a class="nav-link" href="page2.html"><span class="linkBlocks">Topic_1</span></a>
+            </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html"><span class="linkBlocks">Contact</span><i
-                  class="fa-solid fa-address-book"></i></a>
+              <a class="nav-link" href="page3.html"><span class="linkBlocks">Topic_2</span></a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Gallery.html"><span class="linkBlocks">Gallery</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><span class="linkBlocks">Contact</span></a>
             </li>
           </ul>
         </div>
@@ -144,52 +147,102 @@
         //   }
         // }
       </script>
+      
     </div>
     <br>
     <br>
-    <div class='container' id="div">
-      <h3>Potential Images</h3>
-      <div class="gallery">
-        <a target="_blank" href="Images/Digital/Chosen.png">
-          <img src="Images/Digital/Chosen.png" alt="">
-        </a>
-        <p>Star Wars</p>
-      </div>
-      <div class="gallery">
-        <a target="_blank" href="Images/Digital/PrG Glasses.png">
-          <img src="Images/Digital/PrG Glasses.png" alt="">
-        </a>
-        <p>Star Wars: The Clone Wars</p>
-      </div>
-      <div class="gallery">
-        <a target="_blank" href="Images/Digital/Ares chp 225 Redraw.png">
-          <img src="Images/Digital/Ares chp 225 Redraw.png" alt="">
-        </a>
-        <p>Greek Mythology</p>
-      </div>
-      <div class="gallery">
-        <a target="_blank" href="Images/Digital/Katsu.png">
-          <img src="Images/Digital/Katsu.png" alt="">
-        </a>
-        <p>Original Work</p>
-      </div>
-      <div class="gallery">
-        <a target="_blank" href="Images/Digital/Warrior.png">
-          <img src="Images/Digital/Warrior.png" alt="">
-        </a>
-        <p>Original Work</p>
-      </div>
-      <div class="gallery">
-        <a target="_blank" href="Images/Digital/Dragon&Bird.png">
-          <img src="Images/Digital/Dragon&Bird.png" alt="">
-        </a>
-        <p>Original Work</p>
-      </div>
-      <div class="gallery">
-        <a target="_blank" href="Images/Digital/Khoshekh the Floating Cat.png">
-          <img src="Images/Digital/Khoshekh the Floating Cat.png" alt="">
-        </a>
-      </div>
+    
+    </div>
+    <div class="contentBlock">
+    <br>
+    <h3>Topic 1</h3>
+    <p id="about_me">Topic Information will go here
+    </p>
+    <br>
+    <br>
+    <div>
+      <p> where the D3 graph goes </p>
+      <script>
+        // chart = {
+
+        //   // Specify the chart's dimensions.
+        //   const width = 928;
+        //   const height = 500;
+        //   const marginTop = 20;
+        //   const marginRight = 0;
+        //   const marginBottom = 30;
+        //   const marginLeft = 40;
+
+        //   // Create the horizontal scale and its axis generator.
+        //   const x = d3.scaleBand()
+        //     .domain(d3.sort(data, d => -d.frequency).map(d => d.letter))
+        //     .range([marginLeft, width - marginRight])
+        //     .padding(0.1);
+
+        //   const xAxis = d3.axisBottom(x).tickSizeOuter(0);
+
+
+        //   // Create the vertical scale.
+        //   const y = d3.scaleLinear()
+        //     .domain([0, d3.max(data, d => d.frequency)]).nice()
+        //     .range([height - marginBottom, marginTop]);
+
+        //   // Create the SVG container and call the zoom behavior.
+        //   const svg = d3.create("svg")
+        //       .attr("viewBox", [0, 0, width, height])
+        //       .attr("width", width)
+        //       .attr("height", height)
+        //       .attr("style", "max-width: 100%; height: auto;")
+        //       .call(zoom);
+
+        //   // Append the bars.
+        //   svg.append("g")
+        //       .attr("class", "bars")
+        //       .attr("fill", "steelblue")
+        //     .selectAll("rect")
+        //     .data(data)
+        //     .join("rect")
+        //       .attr("x", d => x(d.letter))
+        //       .attr("y", d => y(d.frequency))
+        //       .attr("height", d => y(0) - y(d.frequency))
+        //       .attr("width", x.bandwidth());
+
+        //   // Append the axes.
+        //   svg.append("g")
+        //       .attr("class", "x-axis")
+        //       .attr("transform", `translate(0,${height - marginBottom})`)
+        //       .call(xAxis);
+
+        //   svg.append("g")
+        //       .attr("class", "y-axis")
+        //       .attr("transform", `translate(${marginLeft},0)`)
+        //       .call(d3.axisLeft(y))
+        //       .call(g => g.select(".domain").remove());
+
+        //   return svg.node();
+
+        //   function zoom(svg) {
+        //     const extent = [[marginLeft, marginTop], [width - marginRight, height - marginTop]];
+
+        //     svg.call(d3.zoom()
+        //         .scaleExtent([1, 8])
+        //         .translateExtent(extent)
+        //         .extent(extent)
+        //         .on("zoom", zoomed));
+
+        //     function zoomed(event) {
+        //       x.range([marginLeft, width - marginRight].map(d => event.transform.applyX(d)));
+        //       svg.selectAll(".bars rect").attr("x", d => x(d.letter)).attr("width", x.bandwidth());
+        //       svg.selectAll(".x-axis").call(xAxis);
+        //     }
+        //   }
+        // }
+      </script>
+      
+    </div>
+    <br>
+    <br>
+    
     </div>
   </div>
   <footer>

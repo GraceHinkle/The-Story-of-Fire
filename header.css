@@ -1,13 +1,13 @@
 /*FIX ALL THE STUFF BELOW*/
 body {
-  background-color:rgb(24, 42, 69);
+  background-color:rgb(98, 156, 96);
   /*background-color: rgb(20, 17, 40);  Old Dark Purple Background for All*/
   }
 h1 {
   text-align: center;
-  color:rgb(24, 42, 69);
+  color:rgb(248, 135, 29);
   /* color: rgb(70, 104, 133); */
-  font-family: 'Impact';
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 350%;
 }
 header {
@@ -34,8 +34,8 @@ header {
   /*OLD OLD STUFF BUT STILL KINDA WORKS*/
         
   .header {
-    background-color: rgb(207, 163, 234);
-    padding-top: 1rem;
+    background-color: rgb(20, 22, 55);
+    /* padding-top: 1rem */
   }
   /* Profile Image in Header */
 #me_block{
@@ -62,11 +62,11 @@ header {
   align-self: center;
   font-size: 1rem;
   font-weight: bold;
-  color: rgb(54, 115, 158);
+  color: rgb(238, 128, 18);
   /* color: rgb(207, 163, 234); */
 }
 .nav-link:hover {
-  color: rgb(70, 167, 216);
+  color: rgb(244, 196, 38);
 }
 .nav-links.visible {
   display: block;
@@ -104,18 +104,18 @@ header {
   }
 
   .linkBlocks {
-    background-color: rgb(207, 163, 234);
+    background-color: rgb(20, 22, 55);;
     text-align: center;
     align-self: center;
     border-style: solid;
     border-width: 10px;
-    border-color: rgb(207, 163, 234);
+    border-color: rgb(20, 22, 55);;
   }
 
   /*BODY*/
   .contentBlock {
-    background-color: rgb(20, 17, 40);
-    /* background-color: rgb(109, 100, 172); */
+    /* background-color: rgb(17, 40, 25); */
+    background-color: rgb(12, 36, 30);
     padding: 1rem;
     margin: 1rem;
     border-radius: 20px;
@@ -123,7 +123,7 @@ header {
 
   /*FOOTER*/
   footer {
-    background-color: rgb(207, 163, 234);
+    background-color: rgb(20, 22, 55);;
     /* background-color: rgb(31, 19, 43); */
     padding: 2rem;
     /* margin-top: 2rem; */

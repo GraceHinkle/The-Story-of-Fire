@@ -52,7 +52,7 @@
   /*text*/
   p {
     font-family: 'Calibri';
-    color: rgb(207, 163, 234);
+    color: rgb(98, 156, 96);;
     margin-left: 2%;
     margin-right: 2%;
   }
@@ -80,21 +80,29 @@
     color: rgb(207, 163, 234);
     text-align: center;
   }
+
+  /*Contact Page Stuff*/
   .contactBox {
     margin-top: 50px;
     font-family: 'Calibri';
-    color: rgb(131, 36, 189);
-    background-color: rgb(255, 242, 225);
+    color: rgb(255, 136, 0);
+    background-color: rgb(255, 232, 201);
     padding: 1.27%;
     width: 55%;
     outline-style: solid;
     border-radius: 40px;
     /* outline-style: dashed; */
     outline-width:.2cap;
-    outline-color: rgb(207, 163, 234);
+    outline-color: rgb(255, 136, 0);
     align-content: center;
     text-align: center;
   }
+  #CHeader {
+    color: rgb(20, 22, 55);
+    font-style: bold;
+  }
+  /**/
+
   #Game1 {
     width: 6%;
     margin-left: 1%;
