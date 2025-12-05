@@ -34,6 +34,26 @@
   padding: 5px;
 }
 
+.Maps {
+  display: inline-block;
+  margin: 5px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border: 4px solid rgb(98, 156, 96);
+  width: 350px;
+}
+.Maps:hover {
+  border-color: rgb(246, 82, 0);
+}
+.Maps img {
+  width: 100%;
+  height: auto;
+}
+.Maps .description { /*not in use rn*/
+  text-align: center;
+  padding: 5px;
+}
+
 .videoplayer {
   aspect-ratio: 16 / 9;
     width: 65%;
